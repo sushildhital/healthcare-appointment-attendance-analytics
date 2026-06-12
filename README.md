@@ -1,98 +1,113 @@
-# Healthcare Appointment Attendance Analytics
+# 🏥 Healthcare Appointment Attendance Analytics
 
-## Project Overview
+## 📊 Project Overview
 
-This project analyzes over 110,000 healthcare appointments to understand patient behavior and identify key factors contributing to appointment no-shows.
+This project analyzes 110,000+ healthcare appointments to understand patient behavior and identify key factors contributing to appointment no-shows.
 
-The objective is to build an end-to-end data analytics pipeline from raw data to business insights.
+The goal is to build a complete end-to-end data engineering + analytics pipeline:
 
-Pipeline includes:
-- Data cleaning & feature engineering (Python)
-- Data storage in PostgreSQL
-- SQL-based analytics
-- Business insights generation
-- Power BI dashboard (future work)
+Raw Data → Python Cleaning → PostgreSQL → SQL Analytics → Business Insights → Power BI Dashboard
 
 ---
 
-## Problem Statement
+## 🎯 Problem Statement
 
-Healthcare systems face challenges with missed appointments, leading to:
-- Wasted medical resources
-- Increased waiting times
-- Reduced operational efficiency
+Healthcare systems face significant challenges due to missed appointments:
 
-This project aims to identify patterns behind patient no-shows and suggest actionable insights.
+- ⏳ Wasted doctor time
+- 🏥 Inefficient hospital resource utilization
+- 📉 Increased waiting times
+- 💰 Higher operational costs
 
----
-
-## Tech Stack
-
-- Python (Pandas, NumPy, Matplotlib, Seaborn)
-- PostgreSQL
-- SQL
-- Jupyter Notebook
-- Power BI
-- Git & GitHub
+This project analyzes patterns behind patient no-shows and provides actionable insights.
 
 ---
 
-## Dataset Features
+## 🛠️ Tech Stack
 
-- Patient demographics: Age, Gender
-- Medical conditions: Hypertension, Diabetes, Alcoholism, Handicap
-- Appointment details: ScheduledDay, AppointmentDay
-- Behavioral factors: SMS_received, WaitingDays
-- Target variable: AttendanceStatus (Show / No-show)
-
----
-
-## Project Workflow
-
-Raw Data
-→ Python Cleaning & Feature Engineering
-→ Processed Dataset
-→ PostgreSQL Database
-→ SQL Analysis Layer
-→ Business Insights
-→ Power BI Dashboard
+- 🐍 Python (Pandas, NumPy, Matplotlib, Seaborn)
+- 🐘 PostgreSQL
+- 📊 SQL (Advanced Analytics)
+- 📓 Jupyter Notebook
+- 📈 Power BI (Dashboarding)
+- 🧑‍💻 Git & GitHub
 
 ---
 
-## SQL Analysis Files
+## 🧱 Project Architecture
 
-sql/
-├── 01_create_schema.sql
-├── 02_standardize_columns.sql
-├── 03_data_quality_checks.sql
-├── 04_exploratory_analysis.sql
-├── 05_attendance_analysis.sql
-├── 06_no_show_analysis.sql
-└── 07_business_insights_summary.sql
-
----
-
-## Key Insights
-
-- Waiting time increases no-show probability
-- SMS reminders improve attendance rates
-- Certain age groups show higher no-show rates
-- Geographic variation exists in attendance behavior
-- Medical conditions influence attendance patterns
+Raw CSV Data
+↓
+Python Data Cleaning & Feature Engineering
+↓
+Cleaned Dataset
+↓
+PostgreSQL Database (Healthcare Schema)
+↓
+SQL Analytics Layer
+↓
+Advanced Insights (CTE + Window Functions)
+↓
+Star Schema Data Model
+↓
+Power BI Dashboard (Final Layer)
 
 ---
 
-## Project Status
+## 🔥 Key Insights
 
-- Data Cleaning: Completed
-- PostgreSQL Setup: Completed
-- SQL Analysis: Completed
-- Business Insights: Completed
-- Power BI Dashboard: In Progress
+- ⏳ Longer waiting times increase no-show probability
+- 📲 SMS reminders improve attendance rates
+- 👥 Certain age groups have higher no-show risk
+- 📍 Geographic variation affects attendance behavior
+- 🏥 Medical conditions influence appointment behavior
 
 ---
 
-## Author
+## 📁 Project Structure
 
-Sushil Dhital
-Aspiring Data Engineer | SQL | Python | Analytics
+healthcare-appointment-attendance-analytics/
+
+├── README.md
+├── data
+│   ├── processed
+│   │   └── appointments_cleaned.csv
+│   └── raw
+│       └── dataset.csv
+├── docs
+│   ├── Healthcare Appointment Attendance Analytics.docx
+│   └── Healthcare Appointment Attendance Analytics.pdf
+├── images
+├── notebooks
+│   ├── data_cleaning.ipynb
+│   └── data_profiling.ipynb
+├── powerbi
+└── sql
+    ├── 01_create_schema.sql
+    ├── 02_standardize_columns.sql
+    ├── 03_data_quality_checks.sql
+    ├── 04_exploratory_analysis.sql
+    ├── 05_attendance_analysis.sql
+    ├── 06_no_show_analysis.sql
+    ├── 07_business_insights_summary.sql
+    ├── 08_advanced_sql_analysis.sql
+    └── 09_star_schema.sql
+
+---
+
+## 🚀 Project Status
+
+✔ Data Cleaning (Python)
+✔ Feature Engineering
+✔ PostgreSQL Setup
+✔ SQL Analytics Layer
+✔ Advanced SQL (CTE + Window Functions)
+✔ Star Schema Design
+🔜 Power BI Dashboard (Next Phase)
+
+---
+
+## 👨‍💻 Author
+
+Sushil Dhital  
+Aspiring Data Engineer | SQL | Python | Analytics | BI
