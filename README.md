@@ -37,19 +37,19 @@ This project analyzes patterns behind patient no-shows and provides actionable i
 ## 🧱 Project Architecture
 
 Raw CSV Data
-↓
+      ↓
 Python Data Cleaning & Feature Engineering
-↓
+      ↓
 Cleaned Dataset
-↓
+      ↓
 PostgreSQL Database (Healthcare Schema)
-↓
+      ↓
 SQL Analytics Layer
-↓
-Advanced Insights (CTE + Window Functions)
-↓
+      ↓
+Advanced SQL (CTE + Window Functions)
+      ↓
 Star Schema Data Model
-↓
+      ↓
 Power BI Dashboard (Final Layer)
 
 ---
@@ -68,30 +68,29 @@ Power BI Dashboard (Final Layer)
 
 healthcare-appointment-attendance-analytics/
 
+├── data/
+│   ├── raw/
+│   └── processed/
+
+├── notebooks/
+│   ├── data_cleaning.ipynb
+│   └── data_profiling.ipynb
+
+├── sql/
+│   ├── 01_create_schema.sql
+│   ├── 02_standardize_columns.sql
+│   ├── 03_data_quality_checks.sql
+│   ├── 04_exploratory_analysis.sql
+│   ├── 05_attendance_analysis.sql
+│   ├── 06_no_show_analysis.sql
+│   ├── 07_business_insights_summary.sql
+│   ├── 08_advanced_sql_analysis.sql
+│   └── 09_star_schema.sql
+
+├── powerbi/
+│   └── dashboard.pbix
+
 ├── README.md
-├── data
-│   ├── processed
-│   │   └── appointments_cleaned.csv
-│   └── raw
-│       └── dataset.csv
-├── docs
-│   ├── Healthcare Appointment Attendance Analytics.docx
-│   └── Healthcare Appointment Attendance Analytics.pdf
-├── images
-├── notebooks
-│   ├── data_cleaning.ipynb
-│   └── data_profiling.ipynb
-├── powerbi
-└── sql
-    ├── 01_create_schema.sql
-    ├── 02_standardize_columns.sql
-    ├── 03_data_quality_checks.sql
-    ├── 04_exploratory_analysis.sql
-    ├── 05_attendance_analysis.sql
-    ├── 06_no_show_analysis.sql
-    ├── 07_business_insights_summary.sql
-    ├── 08_advanced_sql_analysis.sql
-    └── 09_star_schema.sql
 
 ---
 
