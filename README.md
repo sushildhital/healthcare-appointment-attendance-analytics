@@ -35,6 +35,8 @@ Missed appointments cause:
 
 ## 🧱 End-to-End Architecture
 
+![Architecture Diagram](./images/architecture.png)
+
 ```text
 Raw CSV Data
    ↓
