@@ -1,0 +1,17 @@
+ALTER TABLE healthcare.appointments RENAME COLUMN "PatientId" TO patient_id;
+ALTER TABLE healthcare.appointments RENAME COLUMN "AppointmentID" TO appointment_id;
+ALTER TABLE healthcare.appointments RENAME COLUMN "Gender" TO gender;
+ALTER TABLE healthcare.appointments RENAME COLUMN "ScheduledDay" TO scheduled_day;
+ALTER TABLE healthcare.appointments RENAME COLUMN "AppointmentDay" TO appointment_day;
+ALTER TABLE healthcare.appointments RENAME COLUMN "Age" TO age;
+ALTER TABLE healthcare.appointments RENAME COLUMN "Neighbourhood" TO neighbourhood;
+ALTER TABLE healthcare.appointments RENAME COLUMN "Scholarship" TO scholarship;
+ALTER TABLE healthcare.appointments RENAME COLUMN "Hypertension" TO hypertension;
+ALTER TABLE healthcare.appointments RENAME COLUMN "Diabetes" TO diabetes;
+ALTER TABLE healthcare.appointments RENAME COLUMN "Alcoholism" TO alcoholism;
+ALTER TABLE healthcare.appointments RENAME COLUMN "Handcap" TO handcap;
+ALTER TABLE healthcare.appointments RENAME COLUMN "SMS_received" TO sms_received;
+ALTER TABLE healthcare.appointments RENAME COLUMN "No-show" TO no_show;
+ALTER TABLE healthcare.appointments RENAME COLUMN "WaitingDays" TO waiting_days;
+ALTER TABLE healthcare.appointments RENAME COLUMN "AgeGroup" TO age_group;
+ALTER TABLE healthcare.appointments RENAME COLUMN "AttendanceStatus" TO attendance_status;
