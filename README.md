@@ -1,81 +1,102 @@
 # 🏥 Healthcare Appointment Attendance Analytics
 
-## 📊 Project Overview
-
-This project analyzes 110,000+ healthcare appointments to understand patient behavior and identify key factors contributing to appointment no-shows.
-
-The goal is to build a complete end-to-end data engineering + analytics pipeline:
-
-Raw Data → Python Cleaning → PostgreSQL → SQL Analytics → Business Insights → Power BI Dashboard
-
----
-
-## 🎯 Problem Statement
-
-Healthcare systems face significant challenges due to missed appointments:
-
-- ⏳ Wasted doctor time
-- 🏥 Inefficient hospital resource utilization
-- 📉 Increased waiting times
-- 💰 Higher operational costs
-
-This project analyzes patterns behind patient no-shows and provides actionable insights.
+<p align="center">
+  <img src="https://img.shields.io/badge/SQL-PostgreSQL-blue?logo=postgresql" />
+  <img src="https://img.shields.io/badge/Python-Data%20Analysis-yellow?logo=python" />
+  <img src="https://img.shields.io/badge/Power%20BI-Dashboard-orange?logo=powerbi" />
+  <img src="https://img.shields.io/badge/Status-Completed-green" />
+</p>
 
 ---
 
-## 🛠️ Tech Stack
+## 🚀 Project Summary
 
-- 🐍 Python (Pandas, NumPy, Matplotlib, Seaborn)
-- 🐘 PostgreSQL
-- 📊 SQL (Advanced Analytics)
-- 📓 Jupyter Notebook
-- 📈 Power BI (Dashboarding)
-- 🧑‍💻 Git & GitHub
+A complete **end-to-end data engineering and analytics project** analyzing **110,000+ healthcare appointments** to uncover patterns behind patient no-shows and improve hospital efficiency.
+
+This project demonstrates:
+- Data Cleaning & Feature Engineering (Python)
+- Data Warehousing (PostgreSQL Star Schema)
+- Advanced SQL Analytics (CTEs + Window Functions)
+- Business Intelligence Readiness (Power BI)
 
 ---
 
-## 🧱 Project Architecture
+## 🎯 Business Problem
 
+Missed appointments cause:
+- ⏳ Wasted doctor availability
+- 🏥 Poor hospital resource utilization
+- 📉 Increased patient waiting time
+- 💰 Financial inefficiencies
+
+👉 Goal: Identify **what drives no-shows and how to reduce them**
+
+---
+
+## 🧱 End-to-End Architecture
+
+```text
 Raw CSV Data
-      ↓
+   ↓
 Python Data Cleaning & Feature Engineering
-      ↓
+   ↓
 Cleaned Dataset
-      ↓
-PostgreSQL Database (Healthcare Schema)
-      ↓
+   ↓
+PostgreSQL (Healthcare Schema)
+   ↓
 SQL Analytics Layer
-      ↓
-Advanced SQL (CTE + Window Functions)
-      ↓
-Star Schema Data Model
-      ↓
-Power BI Dashboard (Final Layer)
+   ↓
+Advanced SQL (CTEs + Window Functions)
+   ↓
+Star Schema Data Warehouse
+   ↓
+Power BI Dashboard
+```
 
 ---
 
-## 🔥 Key Insights
+## 📊 Key Insights
 
-- ⏳ Longer waiting times increase no-show probability
-- 📲 SMS reminders improve attendance rates
-- 👥 Certain age groups have higher no-show risk
-- 📍 Geographic variation affects attendance behavior
-- 🏥 Medical conditions influence appointment behavior
+- 📌 Longer waiting times significantly increase no-show probability
+- 📌 SMS reminders improve attendance rates
+- 📌 Age groups show distinct behavioral patterns
+- 📌 Certain neighbourhoods have higher risk of missed appointments
+- 📌 Medical conditions influence attendance behavior
+
+---
+
+## 🗄️ Data Warehouse Design (Star Schema)
+
+### ⭐ Fact Table
+- fact_appointments
+
+### 📌 Dimensions
+- dim_patient
+- dim_location
+- dim_conditions
+- dim_date
+
+👉 Enables scalable analytics and BI integration
+
+---
+
+## ⚙️ Tech Stack
+
+- Python (Pandas, NumPy, Matplotlib, Seaborn)
+- PostgreSQL
+- SQL (CTEs, Window Functions, Aggregations)
+- Jupyter Notebook
+- Power BI
+- Git & GitHub
 
 ---
 
 ## 📁 Project Structure
 
+```text
 healthcare-appointment-attendance-analytics/
-
 ├── data/
-│   ├── raw/
-│   └── processed/
-
 ├── notebooks/
-│   ├── data_cleaning.ipynb
-│   └── data_profiling.ipynb
-
 ├── sql/
 │   ├── 01_create_schema.sql
 │   ├── 02_standardize_columns.sql
@@ -86,27 +107,33 @@ healthcare-appointment-attendance-analytics/
 │   ├── 07_business_insights_summary.sql
 │   ├── 08_advanced_sql_analysis.sql
 │   └── 09_star_schema.sql
-
 ├── powerbi/
-│   └── dashboard.pbix
-
 ├── README.md
+```
 
 ---
 
-## 🚀 Project Status
+## 🧠 Skills Demonstrated
 
-✔ Data Cleaning (Python)
-✔ Feature Engineering
-✔ PostgreSQL Setup
-✔ SQL Analytics Layer
-✔ Advanced SQL (CTE + Window Functions)
-✔ Star Schema Design
-🔜 Power BI Dashboard (Next Phase)
+✔ Data Engineering Pipeline Design  
+✔ SQL Analytics (Advanced Level)  
+✔ Data Warehousing (Star Schema)  
+✔ Business Insight Generation  
+✔ End-to-End Project Structuring  
+
+---
+
+## 📌 Project Status
+
+🟢 Completed Core Data Pipeline  
+🟢 Completed SQL Analytics Layer  
+🟢 Completed Advanced SQL (CTE + Window Functions)  
+🟢 Completed Star Schema Design  
+🔵 Power BI Dashboard (Next Phase)
 
 ---
 
 ## 👨‍💻 Author
 
-Sushil Dhital  
+**Sushil Dhital**  
 Aspiring Data Engineer | SQL | Python | Analytics | BI
