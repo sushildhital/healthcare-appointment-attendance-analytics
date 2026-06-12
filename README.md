@@ -131,7 +131,7 @@ healthcare-appointment-attendance-analytics/
 🟢 Completed SQL Analytics Layer  
 🟢 Completed Advanced SQL (CTE + Window Functions)  
 🟢 Completed Star Schema Design  
-🔵 Power BI Dashboard (Next Phase)
+🟢 Completed Power BI Dashboard
 
 ---
 
